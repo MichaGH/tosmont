@@ -1,4 +1,5 @@
 import ScrollVelocity from "@/components/customs/ScrollVelocity";
+import ContactSection from "@/components/homepage/ContactSection";
 import HeroSection from "@/components/homepage/HeroSection";
 import PreviewSection from "@/components/homepage/PreviewSection";
 import PreviewSection2 from "@/components/homepage/PreviewSection2";
@@ -43,6 +44,7 @@ export default function Home() {
 					/>
 				</section>
 				<TestimonialsSection />
+                <ContactSection />
 			</main>
 		</>
 	);
