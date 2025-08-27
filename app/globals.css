@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+	--font-space-grotesk: var(--font-space-grotesk);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer utility {
+	.bg-hexagon {
+		background-image: url("/images/patterns/hexagons.svg");
+		background-position: center; /* center, top, left, etc. */
+		background-size: 25px; /* control pattern size */
+	}
+	.bg-cogs {
+		background-image: url("/images/patterns/floating-cogs.svg");
+		background-repeat: repeat; /* or no-repeat */
+		background-position: center; /* center, top, left, etc. */
+		background-size: 1000px 1000px; /* control pattern size */
+	}
+	.bg-graph-paper {
+		background-image: url("/images/patterns/graph-paper.svg");
+		background-repeat: repeat; /* or no-repeat */
+		background-position: center; /* center, top, left, etc. */
+		background-size: 80px 80px; /* control pattern size */
+	}
+
+	.bg-dev,
+	.bg-dev * {
+		background-color: rgba(200, 0, 0, 0.4);
+	}
+	.border-dev,
+	.border-dev * {
+		border: 1px solid rgba(0, 255, 0, 1);
+	}
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@layer components {
+	
+	/* HEX GALLERY */
+	.hex-gallery {
+		--s: 150px; /* control the size */
+		--g: 20px; /* control the gap */
+		display: grid;
+		margin: calc(var(--s) + var(--g));
+	}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	.hex-gallery img {
+		grid-area: 1/1;
+		width: var(--s);
+		aspect-ratio: 1.15;
+		object-fit: cover;
+		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+		transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
+		cursor: pointer;
+		filter: grayscale(80%);
+		transition: 0.2s linear;
+	}
+	.hex-gallery img:hover {
+		filter: grayscale(0);
+		z-index: 1;
+		--_t: 1.2;
+	}
+
+	.hex-gallery img:nth-child(1) {
+		--_y: calc(-100% - var(--g));
+	}
+	.hex-gallery img:nth-child(7) {
+		--_y: calc(100% + var(--g));
+	}
+	.hex-gallery img:nth-child(3),
+	.hex-gallery img:nth-child(5) {
+		--_x: calc(-75% - 0.87 * var(--g));
+	}
+	.hex-gallery img:nth-child(4),
+	.hex-gallery img:nth-child(6) {
+		--_x: calc(75% + 0.87 * var(--g));
+	}
+	.hex-gallery img:nth-child(3),
+	.hex-gallery img:nth-child(4) {
+		--_y: calc(-50% - 0.5 * var(--g));
+	}
+	.hex-gallery img:nth-child(5),
+	.hex-gallery img:nth-child(6) {
+		--_y: calc(50% + 0.5 * var(--g));
+	}
 }
