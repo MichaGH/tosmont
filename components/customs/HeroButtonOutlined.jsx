@@ -19,7 +19,7 @@ export default function HeroButtonOutlined({ text, href, className }) {
             hover: { scaleY: 1 },
           }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="absolute top-0 left-0 w-full h-full bg-blue-600 origin-center z-0"
+          className="absolute top-0 left-0 w-full h-full bg-blue-600  origin-center z-0"
         />
 
         {/* Text */}

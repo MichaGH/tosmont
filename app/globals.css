@@ -5,6 +5,26 @@
 }
 
 @layer utility {
+    /* SLUZBY STYLING */
+    .sluzby-wrapper {
+        @apply font-space-grotesk space-y-16 flex flex-col items-start px-4 md:px-0;
+    } 
+
+    .sluzby-section {
+        @apply text-gray-700 space-y-6;
+    }
+    .sluzby-title {
+        @apply text-3xl md:text-7xl font-bold text-blue-600 uppercase;
+    }
+    .sluzby-subtitle {
+        @apply text-2xl md:text-5xl font-bold text-gray-900 uppercase;
+    }
+    .sluzby-text {
+        @apply text-lg leading-relaxed text-gray-700 ;
+    }
+
+
+
 	.bg-hexagon {
 		background-image: url("/images/patterns/hexagons.svg");
 		background-position: center; /* center, top, left, etc. */
@@ -34,7 +54,6 @@
 }
 
 @layer components {
-	
 	/* HEX GALLERY */
 	.hex-gallery {
 		--s: 150px; /* control the size */
@@ -82,4 +101,37 @@
 	.hex-gallery img:nth-child(6) {
 		--_y: calc(50% + 0.5 * var(--g));
 	}
+
+
+
+
+.expanding-gallery {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  height: 300px;
+}
+
+.expanding-gallery > div {
+  flex: 1;
+  overflow: hidden;
+  transition: flex 0.5s ease;
+  border-radius: 0.5rem;
+}
+
+.expanding-gallery:hover > div {
+  flex: 1; /* all shrink when hovering */
+}
+
+.expanding-gallery > div:hover {
+  flex: 3; /* hovered grows */
+}
+
+.expanding-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills container, cropping if needed */
+}
+
+
 }

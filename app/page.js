@@ -21,7 +21,7 @@ const scrollItems2 = [
 export default function Home() {
 	return (
 		<>
-			<Navbar1 />
+			
 			<main className="bg-deev">
 				<HeroSection />
 				<WelcomeSection />
@@ -44,7 +44,6 @@ export default function Home() {
 					/>
 				</section>
 				<TestimonialsSection />
-                <ContactSection />
 			</main>
 		</>
 	);
