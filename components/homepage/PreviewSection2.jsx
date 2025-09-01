@@ -14,7 +14,7 @@ export default function PreviewSection2() {
                 {/* Right - Text */}
                <div className="bg-deev flex flex-col space-y-8">
                     {/* Title + Subtitle row */}
-                    <div className="flex relative flex-row bg-deev space-x-6">
+                    <div className="flex relative text-center md:text-left flex-col sm:flex-row  bg-deev space-x-6">
                         <h2 className="text-6xl font-bold text-blue-600 uppercase">KVALITA</h2>
                         <div className="w-[1px] my-[6px] bg-gray-400 ">
 

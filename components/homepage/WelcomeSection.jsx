@@ -5,11 +5,11 @@ export default function WelcomeSection() {
     return (
         <section id="about" className="bg-deev w-full bg-white py-36 font-space-grotesk relative">
             <Technical1 className="absolute inset-0 z-0 opacity-100 h-full w-full " stroke={"#F2F2F2"} />
-            <div className="z-10 *:z-10 max-w-6xl bg-deev mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+            <div className="z-10 *:z-10 max-w-6xl bg-deev mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                 {/* Right - text */}
                 <div className="bg-deev flex flex-col space-y-8">
                     {/* Title + Subtitle row */}
-                    <div className="flex relative flex-row bg-deev space-x-4">
+                    <div className="flex relative flex-col text-center sm:text-left sm:flex-row bg-deev space-x-4">
                         <h2 className="text-6xl font-bold text-blue-600 uppercase">Kdo jsme?</h2>
                         <div className="w-[1px] bg-gray-400 ">
 
