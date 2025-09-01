@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function HeroButtonFilled({ text, href, className }) {
     return (
-        <Link href="href">
+        <Link href={href}>
             <motion.button
                 initial="rest"
                 whileHover="hover"

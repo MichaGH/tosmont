@@ -183,7 +183,7 @@ export default function Page() {
 										required
 										rows={5}
 										className="mt-1 w-full border border-gray-100 rounded-md p-3 focus:outline-none focus:ring-1 focus:ring-blue-600"
-										placeholder="Stručně popište, s čím pomoci…"
+										placeholder="Obsah poptávky..."
 									></textarea>
 								</label>
 							</div>

@@ -133,7 +133,7 @@ const galleryItems = [
 				<h3 className="sluzby-subtitle">Vybavení</h3>
                 <MachineryList machinery={machinery} />
 			</section>
-            <section className="sluzby-section w-full">
+            <section className="sluzby-section w-full" id="nase-prace">
 				<h3 className="sluzby-subtitle">Naše Práce</h3>
                 <GalleryClient galleryItems={galleryItems} />
 

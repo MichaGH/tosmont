@@ -20,8 +20,8 @@ export default function PreviewSection2() {
 
                         </div>
                         <div className="flex flex-col justify-center ">
-                            <span className="text-xl text-gray-900">Prvotřídni technologie</span>
-                            <span className="text-xl text-gray-900">Certifikace</span>
+                            <span className="text-xl text-gray-900">Prvotřídni Technologie</span>
+                            <span className="text-xl text-gray-900">Certifikovaná Práce</span>
 
                         </div>
                     </div>

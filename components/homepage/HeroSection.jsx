@@ -32,8 +32,8 @@ export default function HeroSection() {
                     </p>
                 </div>
                 <div className="flex flex-row space-x-4 justify-center">
-                    <HeroButtonOutlined text="O Nás" href="#" className={buttonSizings + " border border-blue-600 text-white"}/>
-                    <HeroButtonFilled text="Služby" href="#" className={buttonSizings + "  border-blue-600 hover:border-white bg-blue-700 hover:bg-white hover:text-black text-white"}/>
+                    <HeroButtonOutlined text="O Nás" href="/o-nas" className={buttonSizings + " border border-blue-600 text-white"}/>
+                    <HeroButtonFilled text="Služby" href="/sluzby1" className={buttonSizings + "  border-blue-600 hover:border-white bg-blue-700 hover:bg-white hover:text-black text-white"}/>
                 </div>
             </div>
         </section>

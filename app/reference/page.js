@@ -22,7 +22,7 @@ export default function Page() {
     <li>
       Fotky můžeme dát jen sem, nebo jen do jednotlivých služeb (
       <Link
-        href="/sluzby/cnc-soustrozeni#nase-prace"
+        href="/sluzby1/cnc-soustrozeni#nase-prace"
         className="text-blue-700 underline inline"
       >
         /sluzby/cnc-soustrozeni

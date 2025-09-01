@@ -92,8 +92,8 @@ export default function Page() {
 			/>
 
 			{/* Intro */}
-			<section className="mt-20 grid max-w-7xl mx-auto grid-cols-1 md:grid-cols-2 gap-8 items-start mb-14 font-space-grotesk ">
-				<div>
+			<section className="mt-12 lg:mt-20 px-4 lg:px-8 xl:px-0 grid max-w-7xl mx-auto grid-cols-1 md:grid-cols-2 gap-8 items-start mb-14 font-space-grotesk ">
+				<div className="">
 					<h2 className="text-6xl font-bold text-blue-600 uppercase mb-8">
 						Naše Firma
 					</h2>
@@ -118,26 +118,25 @@ export default function Page() {
 					/>
 				</div>
 			</section>
-
-			{/* Stats */}
-
-			{/* Mission / values */}
-			<section class="max-w-7xl mx-auto font-space-grotesk">
+		<section class="max-w-7xl mb-12 mx-auto font-space-grotesk">
 				<CountUpGrid stats={stats} />
 			</section>
+			{/* Stats */}
+
+			{/* Mission / values 
+
 			<section className="max-w-7xl mx-auto   font-space-grotesk">
 				<MissionValues values={values} />
 			</section>
 
-			{/* Certificates */}
 			<section className=" max-w-7xl mx-auto my-8 font-space-grotesk">
 
-				{/* <Certificates items={certs} /> */}
+
 				<div className="w-64 h-64 relative mx-auto">
 					<Image src="/images/iso9001.png" className="object-cover" fill />
 				</div>
-			</section>
-			<section className="bg-gray-700 text-white py-20 text-center">
+			</section> */}
+			<section className="bg-slate-500 text-white py-20 text-center">
 				<h3 className="text-4xl font-bold mb-6">
 					Hledáte spolehlivého partnera?
 				</h3>
@@ -146,9 +145,9 @@ export default function Page() {
 				</p>
 				<Link
 					href="/kontakt"
-					className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition"
+					className="inline-block bg-blue-600 text-white px-8 py-4 font-semibold hover:bg-blue-700 transition"
 				>
-					Poptat nabídku
+					Kontaktujte Nás!
 				</Link>
 			</section>
 		</>

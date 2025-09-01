@@ -147,8 +147,12 @@ export default function Navbar() {
               scrolled ? "text-black" : "text-white"
             } flex space-x-6 md:space-x-2 lg:space-x-6`}
           >
+            <Link href="#">
             <FacebookIcon size={28} />
+            </Link>
+            <Link href="#">
             <Instagram size={28} />
+            </Link>
           </div>
           <Link
             href="/kontakt"

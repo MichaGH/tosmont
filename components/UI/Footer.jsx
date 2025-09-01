@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 border-t border-gray-700">
+    <footer className="bg-gray-900 border-t border-gray-700 font-space-grotesk">
       <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
         {/* Left: Client company */}
         <p className="text-gray-400 text-sm">

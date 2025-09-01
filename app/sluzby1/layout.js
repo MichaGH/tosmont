@@ -12,7 +12,7 @@ export default function SluzbyLayout({ children }) {
 			<div className="container max-w-7xl mx-auto flex flex-col md:flex-row gap-8">{/* px4 py8 mt8 */}
 				<ServicesSideMenu items={services} />
 
-				<div className="flex-1">{children}</div>
+				<div className="flex-1 py-4 md:py-8 lg:pt-0">{children}</div>
 			</div>
 		</>
 	);
