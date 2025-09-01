@@ -127,10 +127,7 @@ const galleryItems = [
 				<TechnicalLimits limits={limits} />
 			</section>
 
-			<section className="sluzby-section ">
-				<h3 className="sluzby-subtitle">Široké spektrum materiálu</h3>
-				<MaterialsTabs />
-			</section>
+
 
 			<section className="sluzby-section w-full">
 				<h3 className="sluzby-subtitle">Vybavení</h3>

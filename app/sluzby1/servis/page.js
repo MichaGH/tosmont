@@ -108,7 +108,7 @@ const galleryItems = [
 		<div className="sluzby-wrapper">
 			{/* Page title */}
 			<section className=" sluzby-section">
-				<h2 className="sluzby-title">Broušení</h2>
+				<h2 className="sluzby-title">Servis</h2>
 				<p className="sluzby-text">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quae voluptatem aperiam nisi ipsum nihil, accusamus, voluptas sint nostrum amet vitae porro? Itaque consequuntur, veniam asperiores ut iure architecto rem?
 				</p>

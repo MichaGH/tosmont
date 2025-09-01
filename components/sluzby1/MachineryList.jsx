@@ -22,7 +22,6 @@ export default function MachineryList({ machinery }) {
               {/* Content */}
               <div className="md:w-2/3 w-full p-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-3">
-                  <Wrench className="text-blue-600 w-6 h-6" />
                   {machine.name}
                 </h3>
 

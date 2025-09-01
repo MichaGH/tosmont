@@ -4,10 +4,10 @@ import HexGallery from '../customs/HexGallery'
 export default function PreviewSection2() {
     return (
         <section id="references" className="w-full bg-deev bg-white font-space-grotesk relative py-12">
-            <div className="z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center ">
+            <div className="z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 items-center ">
                 <div className="absolute inset-0 bg-graph-paper opacity-80"/>
                 {/* Left - Hex Gallery */}
-                <div className="relative flex justify-center items-center w-[500px] ">
+                <div className="relative flex justify-center items-center w-full lg:mb-0 mb-16 lg:w-[500px] ">
                         <HexGallery />
                 </div>
 

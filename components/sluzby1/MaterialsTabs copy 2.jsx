@@ -1,54 +1,40 @@
 "use client";
 import { useState } from "react";
 
-// dictionary of all materials
-const MATERIALS_DICT = {
-  Hliník: {
+const materials = [
+  {
     name: "Hliník",
-    image: "/images/materials/aluminium.webp",
+    image: "/images/materials/aluminium.jpg",
     content:
       "Hliník je lehký kov s vynikající korozní odolností. Používáme ho pro přesné součásti a konstrukce, kde je klíčová nízká hmotnost a stabilita.",
   },
-  Ocel: {
+  {
     name: "Ocel",
-    image: "/images/materials/steel.webp",
+    image: "/images/materials/aluminium.jpg",
     content:
       "Ocel je základním materiálem pro většinu našich výrobků. Obrábíme ho přesně podle rozměrů zákazníka a garantujeme vysokou pevnost dílů.",
   },
-  Titan: {
+  {
     name: "Titan",
-    image: "/images/materials/titanium.webp",
+    image: "/images/materials/aluminium.jpg",
     content:
       "Titan je extrémně pevný a lehký materiál. Obrábíme ho pro vysoce technické aplikace, kde je klíčová pevnost a odolnost.",
   },
-  Měď: {
+  {
     name: "Měď",
-    image: "/images/materials/copper.webp",
+    image: "/images/materials/aluminium.jpg",
     content:
       "Měď je měkký a dobře vodivý materiál, ideální pro elektro součásti a speciální konstrukce.",
   },
-  Mosaz: {
+  {
     name: "Mosaz",
-    image: "/images/materials/brass.webp",
+    image: "/images/materials/aluminium.jpg",
     content:
       "Mosaz je slitina mědi a zinku, vhodná pro ozubená kola, ventily a dekorativní komponenty.",
   },
-};
+];
 
-// fallback when not found
-const FALLBACK = {
-  name: "Neznámý materiál",
-  image: "/images/placeholder.svg",
-  content: "",
-};
-
-export default function MaterialsTabs({ list }) {
-  // pick only the materials you passed, fallback if missing
-  const materials =
-    list && list.length > 0
-      ? list.map((mat) => MATERIALS_DICT[mat] || { ...FALLBACK, name: mat })
-      : Object.values(MATERIALS_DICT); // show all if no list provided
-
+export default function MaterialsTabs() {
   const [activeMaterial, setActiveMaterial] = useState(materials[0]);
 
   return (
@@ -61,10 +47,12 @@ export default function MaterialsTabs({ list }) {
             <button
               key={mat.name}
               onClick={() => setActiveMaterial(mat)}
-              className={`px-5 py-3 border-b-2 transition-all font-medium
+              className={`
+                px-5 py-3 border-b-2 transition-all font-medium
                 ${isActive
                   ? "border-blue-600 text-blue-600 font-semibold"
-                  : "border-gray-200 text-gray-700 hover:border-blue-400 hover:text-blue-600"}`}
+                  : "border-gray-200 text-gray-700 hover:border-blue-400 hover:text-blue-600"}
+              `}
             >
               {mat.name}
             </button>
@@ -76,7 +64,7 @@ export default function MaterialsTabs({ list }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start min-h-[20rem]">
         <div className="flex justify-center items-center">
           <img
-            src={activeMaterial.image || FALLBACK.image}
+            src={activeMaterial.image}
             alt={activeMaterial.name}
             className="w-full rounded-xl shadow-lg object-cover h-80"
           />
@@ -85,7 +73,7 @@ export default function MaterialsTabs({ list }) {
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
             {activeMaterial.name}
           </h3>
-          <p>{activeMaterial.content || " "}</p>
+          <p>{activeMaterial.content}</p>
         </div>
       </div>
     </div>

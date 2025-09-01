@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function ServicesButton() {
   return (
@@ -11,6 +12,7 @@ export default function ServicesButton() {
       className="relative px-8 py-4 font-semibold border-3 border-blue-600 text-white uppercase overflow-hidden"
     >
       {/* background fill */}
+      <Link href="/sluzby1" className="absolute inset-0 z-20" ></Link>
       <motion.span
         variants={{
           rest: { scaleX: 0 },

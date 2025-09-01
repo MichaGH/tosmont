@@ -15,14 +15,13 @@ import {
 
 export default function Page() {
 	const images = [
-		"/images/placeholder.svg",
-		"/images/placeholder.svg",
-		"/images/placeholder.svg",
-
+		"/images/cnc/cnc1.webp",
+		"/images/cnc/cnc2.webp",
+		"/images/cnc/cnc3.webp",
 	];
 
 	const materials = [
-		"Material 1",
+		"Ocel",
 		"Nerez",
 		"Hliník",
 		"Mosaz",
@@ -33,26 +32,25 @@ export default function Page() {
 
 	const limits = [
 		{
-			title: "Limit",
-			value: "999 mm",
+			title: "Maximální podélný posuv",
+			value: "2000 mm",
 			icon: MoveHorizontal, // length (X)
 		},
 		{
-			title: "Limit",
-			value: "999 mm",
-			icon: MoveHorizontal, // length (X)
+			title: "Maximální příčný posuv",
+			value: "800 mm",
+			icon: MoveDiagonal, // width (Y)
 		},
 		{
-			title: "Limit",
-			value: "999 mm",
-			icon: MoveHorizontal, // length (X)
+			title: "Max. svislý posun vřeteníku",
+			value: "560 mm",
+			icon: MoveVertical, // height (Z)
 		},
 		{
-			title: "Limit",
-			value: "999 mm",
-			icon: MoveHorizontal, // length (X)
+			title: "Nosnost strojů",
+			value: "2 t",
+			icon: Weight, // load capacity
 		},
-
 	];
 
 	const usages = [
@@ -89,31 +87,37 @@ export default function Page() {
 ];
 
 const galleryItems = [
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    "/images/placeholder.svg",
-    
+    "/images/references/1.jpg",
+    "/images/references/2.jpg",
+    "/images/references/3.webp",
+    "/images/references/4.webp",
+    "/images/references/5.jpg",
+    "/images/references/6.webp",
+    "/images/references/7.webp",
+    "/images/references/8.webp",
+    "/images/references/9.webp",
+    "/images/references/10.webp",
+    "/images/references/10.webp",
+    "/images/references/10.webp"
 ]
 
 	return (
 		<div className="sluzby-wrapper">
 			{/* Page title */}
 			<section className=" sluzby-section">
-				<h2 className="sluzby-title">Broušení</h2>
+				<h2 className="sluzby-title">CNC Soustrožení</h2>
 				<p className="sluzby-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quae voluptatem aperiam nisi ipsum nihil, accusamus, voluptas sint nostrum amet vitae porro? Itaque consequuntur, veniam asperiores ut iure architecto rem?
+					Naše CNC soustružnické služby kombinují moderní stroje a zkušený tým,
+					aby zajistily maximální přesnost a kvalitu výroby. Od jednoduchých
+					válečků po složité tvarované dílce, každý projekt je pečlivě
+					naplánován a kontrolován.
 				</p>
 				<p className="sluzby-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam accusamus eum minus? Voluptatem sequi eligendi doloremque quibusdam earum officia doloribus in, et, ipsa vero aperiam deleniti voluptatum rerum nam consequatur!
+					Díky přesnému řízení pohybu v osách X, Y a Z a možnostem manipulace s
+					těžkými dílci dokážeme vyrobit komponenty, které splňují přísné
+					průmyslové standardy. S důrazem na toleranci a kvalitu povrchu
+					poskytujeme řešení vhodná pro automobilový, letecký a strojírenský
+					průmysl.
 				</p>
 			</section>
 			<section className="sluzby-section">
@@ -123,7 +127,10 @@ const galleryItems = [
 				<TechnicalLimits limits={limits} />
 			</section>
 
-
+			<section className="sluzby-section ">
+				<h3 className="sluzby-subtitle">Široké spektrum materiálu</h3>
+				<MaterialsTabs />
+			</section>
 
 			<section className="sluzby-section w-full">
 				<h3 className="sluzby-subtitle">Vybavení</h3>

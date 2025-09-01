@@ -10,19 +10,19 @@ export default function WelcomeSection() {
                 <div className="bg-deev flex flex-col space-y-8">
                     {/* Title + Subtitle row */}
                     <div className="flex relative flex-row bg-deev space-x-4">
-                        <h2 className="text-6xl font-bold text-blue-600 uppercase">O nás</h2>
+                        <h2 className="text-6xl font-bold text-blue-600 uppercase">Kdo jsme?</h2>
                         <div className="w-[1px] bg-gray-400 ">
 
                         </div>
                         <div className="flex flex-col justify-between ">
-                            <span className="text-xl text-gray-900">Naše hodnoty</span>
-                            <span className="text-xl text-gray-900">Naše hodnoty</span>
+                            <span className="text-xl text-gray-900">Spolehlivost</span>
+                            <span className="text-xl text-gray-900">Záruka Kvality</span>
 
                         </div>
                     </div>
                     <div className="text-gray-700 leading-relaxed flex flex-col space-y-4">
                         <p>
-                            TOSMONT servis s.r.o., rodinná firma založená v roce 2016, se dynamicky rozvíjí. Od roku 2022 působíme v moderních výrobních prostorách v Jindřichově Hradci s týmem více než 20 zkušených zaměstnanců. Stavíme na otevřeném jednání a dlouhodobých vztazích se zákazníky.
+                            TOSMONT servis s.r.o., rodinná firma založená v roce 2016, se dynamicky rozvíjí. Od roku 2022 působíme v moderních výrobních prostorách v Jindřichově Hradci s týmem více než 20 zkušených zaměstnanců. 
                         </p>
                         <p>
                             Naší prioritou je kvalita, přesnost a spolehlivost. Zvládáme jak kusovou výrobu (1–100 ks), tak sériovou (100–10 000 ks) pro české i zahraniční klienty. Od roku 2019 úspěšně působíme také na německém trhu.
