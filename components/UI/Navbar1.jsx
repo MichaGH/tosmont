@@ -61,7 +61,7 @@ export default function Navbar() {
       transition={{ duration: 0.3 }}
       className={`${
         scrolled ? "border-b-0" : "border-b-1 border-gray-200/15"
-      } fixed top-0 left-0 w-full z-50`}
+      } fixed top-0 left-0 w-full z-50 font-space-grotesk`}
     >
       <div className="flex items-center justify-between h-full">
         {/* Left: Logo + Navigation */}

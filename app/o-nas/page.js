@@ -118,7 +118,7 @@ export default function Page() {
 					/>
 				</div>
 			</section>
-		<section class="max-w-7xl mb-12 mx-auto font-space-grotesk">
+		<section class="max-w-7xl px-4 lg:px-8 xl:px-0 mb-12 mx-auto font-space-grotesk">
 				<CountUpGrid stats={stats} />
 			</section>
 			{/* Stats */}

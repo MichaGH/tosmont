@@ -75,7 +75,7 @@ export default function Page() {
       />
 
       {/* Section: Machinery */}
-      <section className="w-full max-w-7xl mx-auto px-6 py-16">
+      <section className="w-full max-w-7xl mx-auto px-6 py-16 font-space-grotesk">
 
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

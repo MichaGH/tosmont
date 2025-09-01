@@ -4,7 +4,7 @@ import { Wrench } from "lucide-react";
 
 export default function MachineryList({ machinery }) {
   return (
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 font-space-grotesk">
           {machinery.map((machine, i) => (
             <div
               key={i}
